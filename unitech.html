@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unitech</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="cabecario">
+            <a href="#home" class="logo" title="página inicial">Unitech</a>
+            <div class="quemsomos"><a href="Páginas/Quem somos.html">Quem somos</a></div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>Seu futuro tecnológico começa aqui.</h2>
+            <img src=" "  alt="Tecnologia e inovação" style="max-width: 100%; height: auto; margin-bottom: 20px;">
+            <p>Na UNITECH, acreditamos que cada startup possui o potencial para fazer a diferença no mundo digital. Com
+                o avanço acelerado da tecnologia, sabemos que o crescimento sustentável exige mais do que apenas
+                inovação – é preciso uma visão estratégica, comprometimento e suporte confiável. É exatamente nisso que
+                nos especializamos: oferecer uma consultoria próxima e humanizada, que entende as necessidades
+                específicas da sua empresa e ajuda a impulsionar seu progresso.
+                <br><br>
+                Trabalhamos ao lado de startups que desejam se destacar, não apenas adaptando-se ao mundo tecnológico,
+                mas liderando nele. Nosso time de especialistas está disponível para oferecer apoio remoto em cada
+                etapa, ajudando você a enfrentar desafios, otimizar processos e tornar seu ambiente de trabalho mais
+                integrado e colaborativo. A UNITECH não é apenas uma consultoria; somos parceiros comprometidos com o
+                sucesso e o crescimento contínuo de sua startup. Nosso objetivo é construir uma base sólida para que
+                você possa avançar com segurança e confiança, trazendo soluções que conectam pessoas, processos e
+                tecnologias de forma integrada.
+                <br><br>
+                Junte-se a nós nessa jornada para transformar o seu negócio, criando um futuro mais tecnológico,
+                eficiente e inovador. Queremos que sua startup cresça de maneira sustentável, em um ambiente que
+                valoriza a colaboração, a criatividade e o propósito de cada equipe. Na UNITECH, seu futuro começa com a
+                nossa parceria
+                <button type="button" onclick="modonoturno()" id="botão">Modo Noturno</button>
+            </p>
+        </section>
+    </main>
+    <div class="rodape">
+        <p>Unitech&copy; 2024 <em>Todos os direitos reservados</em></p>
+    </div>
+    <script type="text/javascript">
+        var mudar = document.getElementById("botão")
+
+        function modonoturno() {
+            if (document.body.style.backgroundColor == "white" && document.body.style.color == "black") {
+                document.body.style.backgroundColor = "black"
+                document.body.style.color = "white"
+                mudar.innerText = "Modo Padrão"
+            }
+            else {
+                document.body.style.backgroundColor = "white"
+                document.body.style.color = "black"
+                mudar.innerText = "Modo Noturno"
+            }
+        }
+    </script>
+</body>
+</html>

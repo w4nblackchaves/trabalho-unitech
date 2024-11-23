@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem Somos</title>
+    <link rel="stylesheet" href="../css/unitech.css">
+</head>
+
+<body>
+    <header>
+        <div class="cabecario">
+            <div>
+                <a href="../unitech.html">Página inicial</a>
+                <a href="../unitech.html" title="Pagina inicial">
+                    <h1 class="logo">Unitech</h1>
+                </a>
+            </div>
+            <div class="quemsomos">
+                <h2>Quem Somos</h2>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="geral">
+            <div class="texto">
+                <p>A Unitech é uma empresa fundada em 2024 por alunos da Uninove, com o objetivo de prestar suporte de
+                    TI a startups. Focada em fornecer soluções tecnológicas personalizadas, a Unitech auxilia empresas
+                    emergentes a estruturarem sua
+                    infraestrutura de tecnologia, desde o gerenciamento de redes e sistemas até a implementação de
+                    segurança digital e otimização de processos. Com uma equipe dinâmica e inovadora, a empresa se
+                    destaca por oferecer um suporte ágil e eficiente, permitindo que as startups se concentrem em seu
+                    crescimento, enquanto a Unitech cuida de suas necessidades tecnológicas.</p>
+            </div>
+            <div class="equipe">
+                <div class="ne">
+                    <h1>Nossa Equipe</h1>
+                </div>
+                <div class="time">
+                    <ul>
+                        <div class="itens">
+                            <li>CEO - Lucas Martiniano</li>
+                        </div>
+                        <div class="itens">
+                            <li>CONSULTOR - Bryan Ernesto</li>
+                        </div>
+                        <div class="itens">
+                            <li>TECNICO FIELD - Ewerton Moreira</li>
+                        </div>
+                        <div class="itens">
+                            <li>ANALISTA DE CLOUD - Lucas Custódio</li>
+                        </div>
+                        <div class="itens">
+                            <li>SUPORTE REMOTO - Leandro Chaves</li>
+                        </div>
+                        <div class="itens">
+                            <li>ANALISTA DE INFRAESTRUTURA - Jonatan Silva</li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="contato">
+            <h3>Contato: </h3>
+            <div class="wlogo">
+
+                <nav><a href="https://wa.me/5511942458666/?text=salve" target="_blank"><img
+                            src="https://encurtador.com.br/WCd0Y" alt="Whatsapp-logo"></a>
+                    <a href="mailto:lucasmartiniano@uni9.edu.br?Subject=Assunto%20Serviços%20da20%Unitech"
+                        target="_blank"> <img src="https://encurtador.com.br/SFBgQ" alt="Email"></a>
+                </nav>
+            </div>
+        </div>
+        <div id="noite">
+            <button type="button" onclick="modonoturno()" id="botão">Modo Noturno</button>
+        </div>
+    </main>
+    <footer>
+
+        <div class="rodape">
+            <p>Unitech&copy; 2024 <em>Todos os direitos reservados</em></p>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        var mudar = document.getElementById("botão")
+
+        function modonoturno() {
+            if (document.body.style.backgroundColor == "white" && document.body.style.color == "black") {
+                document.body.style.backgroundColor = "black"
+                document.body.style.color = "white"
+                mudar.innerText = "Modo Padrão"
+            }
+            else {
+                document.body.style.backgroundColor = "white"
+                document.body.style.color = "black"
+                mudar.innerText = "Modo Noturno"
+            }
+        }
+    </script>
+</body>
+
+</html>
